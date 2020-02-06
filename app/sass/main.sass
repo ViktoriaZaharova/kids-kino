@@ -1,0 +1,639 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+.container
+  width: 100%
+  max-width: 1170px
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  position: relative
+
+a
+  display: block
+  transition: .3s ease
+  text-decoration: none
+  outline: none
+
+  &:hover, &:focus
+    outline: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  width: 100%
+  box-sizing: border-box
+  border: none
+    radius: 0
+  font-family: $default-font
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  text-transform: uppercase
+  font-size: 18px
+  font-weight: bold
+  color: #050505
+  padding: 18px 53px
+
+.btn-accent
+  background-image: linear-gradient(to top, #fdd043, #fde8a3)
+  border: solid 1px #e6ba33
+
+  &:hover
+    background-image: linear-gradient(to bottom, #fdd043, #fde8a3)
+
+button
+  outline: none
+  box-shadow: none
+  box-sizing: border-box
+  border: none
+    radius: 0
+  cursor: pointer
+  transition: .3s ease
+
+strong, label
+  display: inline-block
+
+strong
+  font-weight: bold
+
+.description
+  text-align: center
+  font-size: 24px
+  line-height: 1.42
+  margin: 0 auto
+
+h1
+  margin: 142px 0 0
+  color: #fff
+  -webkit-background-clip: text
+  background-clip: text
+  -webkit-text-fill-color: transparent
+  background-image: linear-gradient(to top, #fdd043, #fde8a3), linear-gradient(to bottom, #ffffff, #ffffff)
+  font-size: 90px
+  font-weight: bold
+  font-family: 'Playfair Display', sans-serif
+  line-height: 1
+
+h2
+  text-align: center
+  width: 100%
+  margin: 0 auto 36px
+  color: #f8db7f
+  font-size: 60px
+  font-family: 'Playfair Display', sans-serif
+
+.w-100
+  width: 100%
+
+//header
+header
+  background: rgba(#1c110d, .6)
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 3
+  width: 100%
+  padding: 12px 0 6px
+
+  .container
+    align-items: center
+    justify-content: space-between
+
+.logo
+  width: 253px
+
+.phone
+  background-image: linear-gradient(to top, #eaad29, #f5e3a9), linear-gradient(to bottom, #ffffff, #ffffff)
+  -webkit-background-clip: text
+  background-clip: text
+  -webkit-text-fill-color: transparent
+  font-size: 30px
+  font-family: 'Roboto', sans-serif
+  font-weight: bold
+  line-height: 1.33
+  position: relative
+  padding: 0 0 0 55px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0, -50%)
+    width: 27px
+    height: 30px
+    background: url("../img/phone.png") no-repeat center
+      size: contain
+
+//main
+main
+  background: url("../img/bg1.jpg") no-repeat center
+    size: cover
+  color: #fff
+
+  .container
+    flex-direction: column
+    align-items: flex-start
+
+    &:before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translate(-50%, 0)
+      background: url("../img/line.png") no-repeat center
+        size: contain
+      width: 488px
+      height: 5px
+
+  .btn
+    color: #de2629
+
+  .description
+    font-size: 30px
+    max-width: 620px
+    width: 100%
+    margin: 38px 0 54px
+    text-align: left
+    line-height: normal
+
+    strong
+      display: inline
+
+
+.date
+  margin: 54px 0 33px
+  background-image: linear-gradient(to top, #fdce3b, #f2cd71), linear-gradient(to bottom, rgba(253, 206, 59, 0.8), rgba(253, 206, 59, 0.8))
+  text-transform: uppercase
+  -webkit-background-clip: text
+  background-clip: text
+  -webkit-text-fill-color: transparent
+  font-size: 120px
+  font-weight: 200
+  letter-spacing: -6px
+
+.sale
+  font-size: 18px
+  margin: 14px 0 0 0
+
+.color-accent
+  color: #fddb6f
+
+//about
+.about
+  padding: 70px 0 23px
+  background-image: linear-gradient(to bottom, #831d1d, #110a08)
+  color: #fff
+
+  .description
+    max-width: 907px
+    width: 100%
+    margin: 0 auto
+
+.about-content
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 74px 0 40px
+
+.about-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  font-size: 24px
+  font-weight: 500
+  line-height: 1.42
+  width: 33%
+  margin: 0 0 33px
+
+  p
+    max-width: 300px
+    width: 100%
+    text-align: center
+
+  .icon
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 206px
+    margin: 0 auto 32px
+
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 387px
+      height: 360px
+      background: url("../img/shadow.png") no-repeat center
+        size: contain
+
+.line
+  margin: 0 auto
+  width: 488px
+
+//stages-success
+.stages-success
+  background-image: linear-gradient(to bottom, #731a1a, #8a010b)
+  color: #fff
+  padding: 18px 0 0
+
+  .container
+    justify-content: space-between
+    align-items: flex-start
+
+  h2
+    background-image: linear-gradient(to top, #fdd043, #fde8a3), linear-gradient(to bottom, #fdce3b, #fdce3b)
+    -webkit-background-clip: text
+    background-clip: text
+    -webkit-text-fill-color: transparent
+    text-align: left
+    line-height: 1.2
+    margin: 0 0 78px
+    font-weight: bold
+    font-size: 50px
+
+.stages-success__box-text
+  max-width: 565px
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+  .text
+    position: relative
+    font-size: 24px
+    line-height: 1.42
+
+    .number
+      background-image: linear-gradient(to top, #fdd043, #fde8a3), linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3))
+      font-family: 'Playfair Display', sans-serif
+      font-size: 300px
+      position: absolute
+      left: 0
+      bottom: -115px
+      opacity: 0.3
+      -webkit-background-clip: text
+      background-clip: text
+      -webkit-text-fill-color: transparent
+      font-stretch: normal
+      letter-spacing: normal
+
+    p
+      position: relative
+      z-index: 1
+
+  .img-arrow
+    width: 128px
+    margin: -40px 110px 0 auto
+    z-index: 2
+
+.stages-success__box-img
+  width: 567px
+  height: 356px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  border-style: solid
+  border-width: 5px
+  border-image-source: linear-gradient(to top, #ebb133, #fecb31, #f4e1a3)
+  border-image-slice: 1
+  background-color: #714d9a
+
+
+.stages-success__two
+  padding: 34px 0 0
+  background-image: linear-gradient(to bottom, #8a000a, #721a1a)
+
+  .img-arrow
+    margin: 10px auto -30px 190px
+
+.stages-success__three
+  padding: 41px 0 0
+  background-image: linear-gradient(to top, #000000, #721a1a)
+
+  .img-arrow
+    margin: 26px 0 -40px auto
+
+//film-festival
+.film-festival
+  background: url("../img/bg2.jpg") no-repeat center
+    size: cover
+  padding: 94px 0 212px
+  color: #fff
+
+  .btn-accent
+    color: #de2629
+    padding: 0
+    width: 431px
+    height: 80px
+
+  .container
+    flex-direction: column
+    align-items: center
+
+  .description
+    margin: 0 auto 146px
+    max-width: 560px
+
+  h2
+    margin: 0 auto 82px
+
+//way-success
+.way-success
+  background: url("../img/bg3.jpg") no-repeat center
+    size: cover
+  padding: 71px 0 78px
+
+  h2
+    color: #7e0001
+    margin: 0 auto 36px
+
+  .description
+    max-width: 960px
+
+.way-success__content
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 30px 0 0 0
+
+.way-success__image
+  width: 590px
+
+.way-success__stages
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.way-success__box
+  display: flex
+  align-items: center
+
+  p
+    max-width: 380px
+    line-height: 1.25
+    font-size: 24px
+    font-weight: 500
+
+  .number
+    margin: 0 26px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    position: relative
+    width: 120px
+    height: 114px
+
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 100%
+      height: 100%
+      background: url("../img/star2.svg") no-repeat center
+        size: contain
+
+    span
+      display: inline-block
+      position: relative
+      z-index: 1
+      -webkit-background-clip: text
+      background-clip: text
+      -webkit-text-fill-color: transparent
+      font-size: 48px
+      -webkit-text-stroke: 1px #66321d
+      font-weight: bold
+      background-image: linear-gradient(to top, #893b0b, #fecb31, #f4e288), linear-gradient(to bottom, #fdce3b, #fdce3b)
+
+      &:before
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translate(-50%, 0)
+        width: 61px
+        height: 53px
+        bottom: -10px
+        background: url("../img/decor1.png") no-repeat center
+          size: contain
+
+//star-counselors
+.star-counselors
+  padding: 66px 0 72px
+  background: url("../img/bg4.jpg") no-repeat center
+    size: cover
+  color: #fff
+
+  h2
+    margin: 0 auto 37px
+
+  .description
+    max-width: 820px
+    margin: 0 auto 30px
+
+.stars-movie
+  max-width: 860px
+  width: 100%
+  margin: 0 auto
+  text-align: center
+  font-size: 24px
+
+.star-counselors__box
+  width: 100%
+  max-width: 250px
+  display: flex
+  flex-direction: column
+  align-items: center
+  font-size: 24px
+  text-align: center
+  font-weight: 500
+
+  .photo
+    width: 230px
+    height: 230px
+    object-fit: contain
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    margin: 0 auto 30px
+    border: 2px solid #ebb133
+      radius: 50%
+    background-color: #250607
+
+  p
+    font-size: 18px
+    font-weight: normal
+    margin: 15px auto 0
+
+.star-counselors__content
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 57px 0 0 0
+
+//direction
+.direction
+  padding: 72px 0 0
+  background: url("../img/bg5.jpg") no-repeat center
+    size: cover
+  overflow: hidden
+  color: #ffffff
+
+  h2
+    margin: 0 auto 69px
+    color: #ffffff
+
+.direction-content
+  display: flex
+  align-items: flex-start
+  justify-content: space-around
+  flex-wrap: wrap
+
+.direction-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  margin: 0 0 44px
+  font-size: 24px
+  font-weight: 500
+
+  .icon
+    width: 222px
+    height: 211px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: url("../img/star2.svg") no-repeat center
+      size: contain
+
+    img
+      margin: 20px auto 0
+
+  p
+    max-width: 200px
+    width: 100%
+    line-height: 1.42
+
+.stars-max
+  width: 371px
+  height: 355px
+  background: url("../img/star2.svg") no-repeat center
+    size: contain
+  font-size: 24px
+  font-weight: 500
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #000000
+  position: relative
+  margin: 0 auto -160px
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    width: 884px
+    background: url("../img/shadow.png") no-repeat center
+      size: 100%
+    height: 804px
+  h6
+    margin: 0 auto 30px
+
+@import "media"
+// Всегда в конце
