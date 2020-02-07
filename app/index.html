@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -49,7 +49,7 @@
             </p>
         </div>
 
-        <a href="#" class="btn btn-accent open_modal">Купить путевку</a>
+        <a href="#modal-buy" class="btn btn-accent open_modal">Купить путевку</a>
 
         <div class="sale">Скидка <strong>10%</strong> при покупке до 30 декабря!</div>
 
@@ -533,12 +533,13 @@
 
 <div class="book-now">
     <div class="container">
-        <div class="book-now__content">
-            <h3>Забронировать путёвку
-                <span class="price">за 55 000 РУБЛЕЙ</span>
-            </h3>
+        <form method="post" class="form">
+            <div class="book-now__content">
+                <h3>Забронировать путёвку
+                    <span class="price">за 55 000 РУБЛЕЙ</span>
+                </h3>
 
-            <form method="post" class="form">
+
                 <label>
                     <input type="text" name="name" placeholder="Имя" required>
                 </label>
@@ -555,23 +556,25 @@
                     <span class="label">Настоящим подтверждаю своё согласие на обработку
 персональных данных</span>
                 </label>
-            </form>
-        </div>
 
-        <div class="sale-wrapper">
-            <h4>Скидка 10% действительна в течение</h4>
-
-            <div class="putMessage">
-                <div id="countdown"></div>
-                <div class="description-timer">
-                    <span class="clock2">часов</span>
-                    <span class="clock3">минут</span>
-                    <span class="clock4">секунд</span>
-                </div>
             </div>
 
-            <button type="submit" class="btn btn-accent">ЗАБРОНИРОВАТЬ ПУТЕВКУ</button>
-        </div>
+            <div class="sale-wrapper">
+                <h4>Скидка 10% действительна в течение</h4>
+
+                <div class="putMessage">
+                    <div id="countdown"></div>
+                    <div class="description-timer">
+                        <span class="clock2">часов</span>
+                        <span class="clock3">минут</span>
+                        <span class="clock4">секунд</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-accent">ЗАБРОНИРОВАТЬ ПУТЕВКУ</button>
+            </div>
+
+        </form>
     </div>
 </div>
 
@@ -585,7 +588,8 @@
             </div>
 
             <div class="answer">
-                <p>Наша программа адаптирована для детей от 10 до 17 лет. Каждому участнику будет предложен уровень программы, который соответствует его возрасту и навыкам.</p>
+                <p>Наша программа адаптирована для детей от 10 до 17 лет. Каждому участнику будет предложен уровень
+                    программы, который соответствует его возрасту и навыкам.</p>
             </div>
         </div>
         <div class="question-box">
@@ -594,7 +598,9 @@
             </div>
 
             <div class="answer">
-                <p>Перейдите в раздел “Купить путёвку”. Заполните все поля, загрузите сканы или фотографии документов. Оплатите банковской картой на сайте. Путёвка и все необходимые документы придут на указанный вами адрес электронной почты.</p>
+                <p>Перейдите в раздел “Купить путёвку”. Заполните все поля, загрузите сканы или фотографии документов.
+                    Оплатите банковской картой на сайте. Путёвка и все необходимые документы придут на указанный вами
+                    адрес электронной почты.</p>
             </div>
         </div>
         <div class="question-box">
@@ -638,7 +644,8 @@
             </div>
 
             <div class="answer">
-                <p>20 км от МКАД по Косинскому шоссе. Точный адрес: Россия, Московская область, Раменский район, коттеджный посёлок Полушкино, ФГБУ
+                <p>20 км от МКАД по Косинскому шоссе. Точный адрес: Россия, Московская область, Раменский район,
+                    коттеджный посёлок Полушкино, ФГБУ
                     «Оздоровительный комплекс Полушкино».</p>
 
                 <div class="button-wrapper">
@@ -648,10 +655,12 @@
 
                 <div class="maps-content">
                     <div class="maps maps-active" id="ya-maps">
-                        <iframe src="https://yandex.ru/map-widget/v1/-/CKQKz8pw" frameborder="1" allowfullscreen="true"></iframe>
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CKQKz8pw" frameborder="1"
+                                allowfullscreen="true"></iframe>
                     </div>
                     <div class="maps" id="google-maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4498.292059613174!2d38.08663217839832!3d55.68644887214251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ac637c1e0c377%3A0x19a9482f2d77cb60!2z0J_QvtC70YPRiNC60LjQvdC-LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1581065220132!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4498.292059613174!2d38.08663217839832!3d55.68644887214251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ac637c1e0c377%3A0x19a9482f2d77cb60!2z0J_QvtC70YPRiNC60LjQvdC-LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1581065220132!5m2!1sru!2sua"
+                                frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
@@ -664,12 +673,16 @@
         <h2>Сертификаты</h2>
 
         <div class="certificate-content w-100">
-            <div class="slide"><a href="img/certificate.jpg" class="certificate-box" data-fancybox="images"><img src="img/certificate.jpg" alt=""></a></div>
-            <div class="slide"><a href="img/certificate.jpg" class="certificate-box" data-fancybox="images"><img src="img/certificate.jpg" alt=""></a></div>
-            <div class="slide"><a href="img/certificate.jpg" class="certificate-box" data-fancybox="images"><img src="img/certificate.jpg" alt=""></a></div>
-            <div class="slide"><a href="img/certificate.jpg" class="certificate-box" data-fancybox="images"><img src="img/certificate.jpg" alt=""></a></div>
+            <div class="slide"><a href="img/certificate.jpg" class="certificate-box" data-fancybox="images"><img
+                    src="img/certificate.jpg" alt=""></a></div>
+            <div class="slide"><a href="img/certificate.jpg" class="certificate-box" data-fancybox="images"><img
+                    src="img/certificate.jpg" alt=""></a></div>
+            <div class="slide"><a href="img/certificate.jpg" class="certificate-box" data-fancybox="images"><img
+                    src="img/certificate.jpg" alt=""></a></div>
+            <div class="slide"><a href="img/certificate.jpg" class="certificate-box" data-fancybox="images"><img
+                    src="img/certificate.jpg" alt=""></a></div>
         </div>
-        
+
         <div class="line"><img src="img/line.png" alt=""></div>
     </div>
 </section>
@@ -683,13 +696,42 @@
     </div>
 </footer>
 
+<div class="modal__div" id="modal-buy">
+    <div class="modal__wrapper">
+        <h3>Купить путевку</h3>
+
+        <form method="post" class="form">
+            <label>
+                <input type="text" name="name" placeholder="Имя" required>
+            </label>
+            <label>
+                <input type="text" name="phone" placeholder="Телефон" maxlength="11">
+            </label>
+            <div class="error">Введите корректный номер телефона</div>
+
+            <label>
+                <input type="text" name="mail" placeholder="Email">
+            </label>
+
+
+            <label class="checkbox">
+                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="label">Настоящим подтверждаю своё согласие на обработку
+персональных данных</span>
+            </label>
+
+            <button class="btn btn-black" type="submit"><span>Заказать  звонок</span></button>
+        </form>
+    </div>
+</div>
 
 <div class="modal__div" id="modal-thanks">
     <div class="modal__wrapper">
-        <h3>
-            <span class="color-accent">Спасибо за заявку!</span>
-            Скоро мы с вами свяжемся.</h3>
-        <div class="modal__close btn btn-accent">ок</div>
+        <div class="modal__close"><img src="img/close.png" alt=""></div>
+        <h3 class="color-gradient">Спасибо за заявку!</h3>
+
+        <p>Наш менеджер свяжется с Вами для уточнения данных.</p>
     </div>
 </div>
 <div class="overlay"></div><!-- Пoдлoжкa -->
