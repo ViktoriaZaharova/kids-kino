@@ -117,5 +117,19 @@ $('.question-box__item').click(function () {
 $('.certificate-content').slick({
     slidesToShow: 3,
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 725,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 570,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
 });

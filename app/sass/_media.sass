@@ -506,16 +506,547 @@
     font-size: 10px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px)
-  /**/
+@media only screen and (max-width: 740px)
+  .stages-success .container
+    flex-direction: column
+    align-items: flex-start
+    position: relative
+    .img-arrow
+      width: 72px
+      height: 109px
+
+  .stages-success__one
+    .img-arrow
+      position: absolute
+      transform: scale(-1,1)
+      right: 20px
+      bottom: -125px
+      margin: 0
+
+
+  .stages-success__box-text
+    order: -1
+    max-width: none
+
+  .stages-success__box-img
+    max-width: none
+    margin: 15px auto 0
+    border-width: 2px
+
+  .stages-success__two .img-arrow
+    position: absolute
+    right: 0
+    top: 0
+
+  .stages-success h2
+    br
+      display: none
+
+  .stages-success__three
+    .container
+      .img-arrow
+        position: absolute
+        left: 55px
+        bottom: -100px
+        width: 54px
+        height: 84px
+        margin: 0
+
+  .stages-success__three
+    padding: 53px 0 42px
+    .stages-success__box-img
+      margin: 60px auto 0
+
+  .stages-success__two
+    .container
+      .img-arrow
+        position: absolute
+        right: 20px
+        bottom: -125px
+        margin: 0
+        top: auto
+
+  .description-academy
+    flex-direction: column
+    align-items: center
+
+  .description-academy__image
+    order: -1
+    margin: 0 auto 15px
+    height: 224px
+
+  .description-academy__text
+    max-width: none
+    font-size: 14px
+
+  .list-check
+    margin: 25px 0 0
+    li
+      margin: 0 0 10px
+
+  .book-now
+    padding: 31px 0 49px
+    .container
+      .form
+        flex-direction: column
+        align-items: center
+
+  .book-now__content
+    max-width: none
+    margin: 0 0 60px
+
+  .certificate
+    padding: 43px 0 42px
+    h2
+      margin: 0 auto 23px
+
+  .certificate:after, .certificate:before
+    display: none
+
+  .certificate-content
+    margin: 0 0 34px
+
+  .slick-prev
+    left: 10px
+
+  .slick-next
+    right: 10px
+
+
+
+@media only screen and (max-width: 700px)
+  header .btn
+    display: none
+
+  header
+    padding: 13px 0
+
+  .container
+    padding: 0 14px
+
+  .logo
+    width: 136px
+
+  .phone
+    font-size: 15px
+    padding: 0 0 0 24px
+    &:before
+      width: 16px
+      height: 18px
+
+  h1
+    margin: 96px 0 0
+    text-align: center
+    font-size: 36px
+
+  main .description
+    margin: 17px 0 31px
+    font-size: 16px
+    text-align: center
+
+  main .btn
+    font-size: 18px
+    width: 266px
+    height: 58px
+    margin: 0 auto
+
+  .sale
+    text-align: center
+    margin: 13px auto 0
+    font-size: 12px
+
+  .date
+    margin: 31px auto 37px
+    font-size: 60px
+    letter-spacing: -3.03px
+    text-align: center
+
+  main .container:before
+    width: 282px
+    height: 5px
+
+  .children-are-busy
+    padding: 34px 0 53px
+    h2
+      margin: 0 auto 26px
+
+  .children-are-busy__content
+    flex-direction: column
+    align-items: center
+
+  .children-are-busy__text
+    max-width: none
+    font-size: 13.5px
+    margin: 0 0 20px
+    p
+      margin: 0 0 15px
+
+  .children-are-busy__image
+    height: 213px
+    width: 100%
+    max-width: 319px
+
+  .children-are-busy .btn-reservation
+    font-size: 12px
+    margin: 26px auto 0
+    width: 236px
+    height: 50px
+
+  .good-summer
+    padding: 46px 0 71px
+    h2
+      margin: 0 auto 20px
+
+  .good-summer__image
+    margin: 0 auto 28px
+    width: 100%
+    max-width: 323px
+    height: 236px
+    &:last-child
+      margin: 0 auto
+
+  .good-summer__content
+    flex-direction: column
+    align-items: center
+
+  .good-summer__text
+    max-width: none
+    font-size: 13.5px
+
+  .good-summer__text-one
+    order: -1
+
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px)
-  /**/
+@media only screen and (max-width: 640px)
+  footer
+    .btn
+      width: 237px
+      font-size: 16px
+      height: 50px
+      padding: 0
 
+
+@media only screen and (max-width: 610px)
+  .star-counselors .description
+    font-size: 13.5px
+    margin: 0 auto 13px
+
+  .stars-movie
+    font-size: 14px
+
+  .star-counselors__content
+    flex-direction: column
+    align-items: center
+    margin: 25px 0 0
+
+  .star-counselors__box
+    max-width: 160px
+    margin: 0 0 36px
+    position: relative
+    &:before, &:after
+      content: ''
+      position: absolute
+      top: 32%
+      transform: translate(0,-50%)
+      width: 85px
+      height: 182px
+    &:before
+      background: url("../img/star-max1.png") no-repeat center
+        size: contain
+      left: -85px
+    &:after
+      background: url("../img/star-max2.png") no-repeat center
+        size: contain
+      right: -85px
+    h3
+      font-size: 13.5px
+    .photo
+      height: 160px
+      margin: 0 auto 13px
+    p
+      font-size: 12px
+      margin: 5px auto 0
+
+  .about-academy
+    padding: 43px 0 41px
+    h2
+      margin: 0 auto 40px
+
+  .list-decor li
+    width: 100%
+    margin: 0 0 30px
+    font-size: 14px
+    p
+      max-width: none
+
+  .list-decor li:nth-child(3), .list-decor li:nth-last-child(2), .list-decor li:last-child
+    margin: 0 0 30px
+
+  .about-academy__content
+    margin: 30px 0 0
+
+  .about-academy__box
+    margin: 0 0 25px
+    max-width: 50%
+    .image
+      margin: 0 auto 9px
+
+  .description-academy
+    margin: 20px 0 0
+
+  .about-academy .btn-reservation
+    margin: 29px auto 0
+    font-size: 12px
+    width: 236px
+    height: 50px
+
+  .advantages-academy__box
+    max-width: 48%
+    margin: 0 0 13px
+
+  .advantages-academy__box-title
+    line-height: normal
+
+
+  .cost-composition
+    padding: 42px 0 36px
+
+  .cost-composition__box
+    width: 100%
+    min-height: auto
+    padding: 0 9px 39px 20px
+    margin: 0 0 39px
+    &:last-child
+      margin: 0
+
+  .cost-composition h2
+    margin: 0 0 69px
+
+  footer
+    padding: 30px 0 106px
+    .container
+      flex-direction: column
+      align-items: flex-start
+      .logo
+        width: 158px
+      .phone
+        margin: 45px auto
+        font-size: 22px
+      .btn
+        margin: 0 auto
+
+@media only screen and (max-width: 540px)
+  .question
+    padding: 52px 0 42px
+    h2
+      margin: 0 auto 21px
+
+  .question-box
+    padding: 21px 13px 24px 14px
+    margin: 0 0 10px
+
+  .answer
+    font-size: 14.5px
+
+  .button-wrapper
+    margin: 21px 0 18px
+    .btn
+      width: 137px
+      height: 28px
+      font-size: 10px
+    .btn-red
+      margin: 0 0 0 14px
+
+  .maps-content
+    height: 231px
+
+@media only screen and (max-width: 480px)
+  main
+    background: url("../img/bg1-mobile.jpg") no-repeat center top
+      size: cover
+
+  .about
+    padding: 33px 0 24px
+
+  h2
+    font-size: 22px
+    margin: 0 auto 21px
+
+  .description
+    font-size: 14px
+
+  .about-content
+    margin: 50px 0 0
+
+  .about-box
+    width: 50%
+    font-size: 11px
+    margin: 0 0 22px
+    p
+      max-width: 140px
+    .icon
+      margin: 0 auto 15px
+      width: 97px
+      height: 92px
+      &:before
+        width: 172px
+        height: 163px
+
+  .line
+    width: 304px
+
+  .stages-success h2
+    font-size: 22px
+    margin: 0 0 21px
+
+  .stages-success__box-text .text
+    font-size: 13.5px
+    padding: 0 75px 0 0
+    .number
+      bottom: -50px
+
+  .stages-success__box-img
+    width: 100%
+    height: 202px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .stages-success__two
+    padding: 41px 0 0
+
+  .stages-success__one, .stages-success__two
+    .container
+      .img-arrow
+        bottom: -145px
+
+  .film-festival
+    padding: 40px 0 27px
+
+  .film-festival .description
+    font-size: 13.5px
+    margin: 0 auto 16px
+
+  .film-festival h2
+    margin: 0 auto 23px
+
+  .film-festival .btn-accent
+    width: 260px
+    height: 48px
+    font-size: 11px
+
+  .way-success__image
+    display: none
+
+  .way-success
+    padding: 36px 0 50px
+    h2
+      margin: 0 auto 18px
+    .description
+      font-size: 14px
+
+  .way-success__content
+    margin: 40px 0 0
+
+  .way-success__box p
+    font-size: 14px
+
+  .star-counselors
+    padding: 41px 0 38px
+
+  .direction
+    padding: 38px 0 0
+    h2
+      margin: 0 auto 30px
+
+  .direction-content
+    flex-direction: column
+    align-items: center
+
+  .direction-box
+    font-size: 16.5px
+    margin: 0 0 31px
+    .icon
+      width: 111px
+      height: 105px
+      margin: 0 auto 9px
+
+  .stars-max
+    width: 229px
+    height: 222px
+    margin: 0 auto -100px
+    font-size: 16.5px
+    &:before
+      display: none
+
+  .direction
+    background: url("../img/bg5-mobile.jpg") no-repeat center
+      size: cover
+
+  .result
+    padding: 41px 0 40px
+    h2
+      margin: 0 auto 31px
+
+  .list-number
+    font-size: 12px
+    line-height: 1.5
+    li
+      margin: 0 0 10px
+      .number
+        font-size: 14.5px
+
+  .sale-wrapper h4
+    font-size: 14px
+
+  .putMessage
+    margin: 19px 0 56px
+
+  .countdownHolder .position
+    font-size: 40px
+    width: 49px
+    height: 58px
+
+  .countMinutes
+    margin: 0 16px
+
+  .description-timer
+    font-size: 14px
+    margin: 6px 0 0 0
+
+  .sale-wrapper .btn
+    width: 236px
+    height: 50px
+    font-size: 12px
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px)
-  /**/
+@media only screen and (max-width: 400px)
+  .description-academy__image
+    width: 100%
+
+@media only screen and (max-width: 345px)
+  .button-wrapper
+    flex-direction: column
+    align-items: flex-start
+    .btn-red
+      margin: 10px 0 0
+
+  .modal__div
+    width: 100%
+
+  #modal-thanks .modal__wrapper p
+    font-size: 16px
+
+  .modal__div .modal__wrapper .color-gradient
+    margin: 0 auto 30px
+
+@media only screen and (max-width: 330px)
+  .logo
+    width: 110px
+
+  .date
+    font-size: 40px
 
