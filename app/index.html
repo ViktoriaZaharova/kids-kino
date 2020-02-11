@@ -30,16 +30,57 @@
 
 <body>
 
+<div class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__top">
+            <div class="btn-close"><img src="img/close.png" alt=""></div>
+
+            <ul class="menu">
+                <li><a href="#about" class="go_to">Что такое “Детская киноакадемия”</a></li>
+                <li><a href="#main" class="go_to">Ворвись в индустрию кино</a></li>
+                <li><a href="#film-festival" class="go_to">Кинофестиваль</a></li>
+                <li><a href="#way-success" class="go_to">Путь к успеху</a></li>
+                <li><a href="#star-counselors" class="go_to">Звездные вожатые</a></li>
+                <li><a href="#direction" class="go_to">Направления</a></li>
+                <li><a href="#result" class="go_to">По результатам смены</a></li>
+                <li><a href="#cost-composition" class="go_to">Что входит в стоимость путевки</a></li>
+                <li><a href="#question" class="go_to">Часто задаваемые вопросы</a></li>
+                <li><a href="#certificate" class="go_to">Сертификаты</a></li>
+                <li><a href="#book-now" class="go_to">Забронировать путёвку</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu__bottom">
+            <a href="tel:88002009300" class="phone">
+                <span class="text">8 (800) 200-93-00</span></a>
+
+            <div class="address">
+                <div class="icon"><img src="img/loc.png" alt=""></div>
+                <p> Московская область, Раменский район,
+                коттеджный посёлок Полушкино, ФГБУ
+                «Оздоровительный комплекс Полушкино».</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <header>
     <div class="container">
         <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
         <a href="tel:88002009300 " class="phone">8 (800) 200 - 93 - 00 </a>
 
         <a href="#" class="btn btn-accent">Заказать звонок</a>
+
+        <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 </header>
 
-<main>
+<main id="main">
     <div class="container">
         <h1>Ворвись в индустрию кино в “Детской киноакадемии”!</h1>
 
@@ -57,7 +98,7 @@
     </div>
 </main>
 
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <h2>Что такое “Детская киноакадемия”?</h2>
 
@@ -155,7 +196,7 @@
     </div>
 </div>
 
-<section class="film-festival">
+<section class="film-festival" id="film-festival">
     <div class="container">
         <h2>Кинофестиваль</h2>
 
@@ -168,7 +209,7 @@
     </div>
 </section>
 
-<section class="way-success">
+<section class="way-success" id="way-success">
     <div class="container">
         <h2>Путь к успеху</h2>
         <div class="description">
@@ -207,7 +248,7 @@
     </div>
 </section>
 
-<section class="star-counselors">
+<section class="star-counselors" id="star-counselors">
     <div class="container">
         <h2>Звездные вожатые</h2>
 
@@ -250,7 +291,7 @@
     </div>
 </section>
 
-<section class="direction">
+<section class="direction" id="direction">
     <div class="container">
         <h2>Выбирай направление:</h2>
 
@@ -369,7 +410,7 @@
     </div>
 </section>
 
-<section class="result">
+<section class="result" id="result">
     <div class="container">
         <h2>По результатам смены участник:</h2>
 
@@ -465,7 +506,7 @@
     </div>
 </section>
 
-<section class="cost-composition">
+<section class="cost-composition" id="cost-composition">
     <div class="container">
         <h2>Что входит в стоимость путевки</h2>
 
@@ -531,7 +572,7 @@
     </div>
 </section>
 
-<div class="book-now">
+<div class="book-now" id="book-now">
     <div class="container">
         <form method="post" class="form">
             <div class="book-now__content">
